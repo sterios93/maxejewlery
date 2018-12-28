@@ -1,0 +1,113 @@
+/* Colors */
+.headingsColor {
+    color: #2a2625;
+}
+.formsTextsColor {
+    color: #bcbcbc;
+}
+.buttonsColor {
+    color: #AA8077;
+}
+.mainColor {
+    color: #FFFFFF;
+}
+/* Backgrounds */
+.buttonsBg {
+    background: #AA8077;
+}
+.mainBg {
+    background: #FFFFFF;
+}
+.blackBg {
+    background: #2a2625;
+}
+
+/* Fonts */
+.ralewayFont {
+    font-family: 'Raleway', sans-serif;
+}
+.semiBold {
+    font-weight:600;
+}
+.lightBold {
+    font-weight: 300;
+}
+.mediumBold {
+    font-weight: 500;
+}
+/* Hovers */
+.pinkHover:hover {
+    color:  #AA8077;
+    text-decoration: none;
+}
+.pinkBottBorder {
+    border-bottom: 2px solid #AA8077;
+}
+/* Main navigation */
+#mainNav {
+    top: 50px;
+}
+/* Header */
+header {
+    height: 100vh;
+}
+.site-heading {
+    padding: 200px 0 100px 0;
+}
+.site-heading p {
+    font-size: 34px; line-height: 50px; letter-spacing: 2px;
+}
+
+/* xs */
+@media only screen and (max-width: 480px) {
+    /* header */
+    header {
+        height: 70vh;
+    }
+    .masthead {
+        background: url("../assets/hero-image-xs.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .site-heading {
+        padding: 200px 0 100px 0;
+    }
+}
+/* sm */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    /* header */
+    .masthead {
+        background: url("../assets/hero-image-m.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+/* md */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* header */
+    .masthead {
+        background: url("../assets/hero-image-lg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+/* lg */
+@media only screen and (min-width: 985px) {
+    /* header */
+    header {
+        height: 90vh;
+    }
+    .masthead {
+        background: url("../assets/hero-image-xl.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .site-heading {
+        padding: 250px 0 100px 0;
+    }
+    .site-heading p {
+        font-size: 52px; line-height: 100px; letter-spacing: 5px;
+    }
+}
