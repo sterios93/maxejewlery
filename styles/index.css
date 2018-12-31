@@ -57,7 +57,14 @@ header {
 .site-heading p {
     font-size: 34px; line-height: 50px; letter-spacing: 2px;
 }
-
+/* Product Page */
+.nav-tabs {
+    border: none;
+}
+.nav-tabs .nav-link.active {
+    border: 1px solid #AA8077;
+    border-radius: 0;
+}
 /* xs */
 @media only screen and (max-width: 480px) {
     /* header */
