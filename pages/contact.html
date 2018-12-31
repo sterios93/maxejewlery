@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom css -->
     <link rel="stylesheet" href="../styles/index.css">
-    <title>MAXE jewelry</title>
+    <title>Contact Page</title>
 </head>
-<body style="height: 100vh;">
+<body  style="height: 100vh;">
     <!-- Free shipping -->
         <!-- Large Screen -->
-        <section class="d-none d-lg-flex justify-content-center blackBg align-items-center p-2 fixed-top">
+        <section class="d-none d-lg-flex justify-content-center blackBg align-items-center p-3 fixed-top">
             <p class="ralewayFont m-0"><span class="buttonsColor mediumBold">FREE SHIPPING</span> <span class="mainColor mediumBold">ON ALL ORDERS OVER &euro;60</span></p>
         </section>
         <!-- Small screen -->
@@ -25,7 +25,7 @@
         </section>
     <!-- Main Navigation -->
         <!-- Large Screen -->
-        <nav class="navbar d-none d-lg-flex navbar-expand-md fixed-top" id="mainNav">
+        <nav class="navbar d-none d-lg-flex bg-white navbar-expand-md fixed-top" id="mainNav" style="border-bottom: 2px solid grey";>
             <div class="container">
                 <span class="navbar-brand text-white">
                         <a href="./index.html" class="nav-font" style="font-size: 32px;">
@@ -39,11 +39,15 @@
                         <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="hamburgerMenu">
-                    <ul class="navbar-nav ml-auto align-items-lg-end">
-                        <li class="nav-item">
-                            <span class="nav-link text-center">
-                                <a href="./products.html" class="ralewayFont headingsColor pinkHover text-uppercase mediumBold">Products</a>
-                            </span>
+                    <ul class="navbar-nav ml-auto align-items-lg-center">
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle ralewayFont headingsColor pinkHover text-uppercase mediumBold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Products
+                                </a>
+                                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                </div>
                         </li>
                         <li class="nav-item">
                             <span class="nav-link text-center">
@@ -72,7 +76,7 @@
             </div>
         </nav>
         <!-- Small screen -->
-        <nav class="navbar d-lg-none">
+        <nav class="navbar d-lg-none" style="border-bottom: 2px solid grey";>
             <div class="container">
                 <span class="navbar-brand text-white">
                     <a href="./index.html" class="nav-font" style="font-size: 32px;">
@@ -87,10 +91,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mobileMenu">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <span class="nav-link text-center">
-                                <a href="./products.html" class="ralewayFont headingsColor pinkHover text-uppercase">Products</a>
-                            </span>
+                        <li class="nav-item dropdown text-center">
+                                <a class="nav-link dropdown-toggle ralewayFont headingsColor pinkHover text-uppercase mediumBold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Products
+                                </a>
+                                <div class="dropdown-menu border-0 p-0" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item text-center ralewayFont headingsColor pinkHover text-uppercase" href="#">Action</a>
+                                  <a class="dropdown-item text-center ralewayFont headingsColor pinkHover text-uppercase" href="#">Another action</a>
+                                </div>
                         </li>
                         <li class="nav-item">
                             <span class="nav-link text-center">
@@ -118,93 +126,37 @@
                 </div>
             </div>
         </nav>
-    <!-- Header -->
-        <header>
-            <div class="masthead h-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <div class="site-heading mt-0 text-white">
-                                <p class="h1 headingsColor mediumBold ralewayFont">UNDERLINE YOUR<br> PERSONALITY</p>
+        <!-- Main -->
+        <main class="h-100">
+            <div style="height: 200px;" class="d-none d-lg-flex"></div>
+            <div style="height: 50px;" class="d-lg-none"></div>
+            <section class="container">
+                <p class="ralewayFont headingsColor text-uppercase">contacts</p>
+                <form>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-lg-4">
+                                <label for="name">Your Name: *</label>
+                                <input type="text" class="form-control rounded-0" id="name">
+                            </div>
+                            <div class="form-group col-12 col-lg-4">
+                                <label for="phone">Phone number: *</label>
+                                <input type="number" class="form-control rounded-0" id="phone">
+                            </div>
+                            <div class="form-group col-12 col-lg-4">
+                                <label for="email">Your email: *</label>
+                                <input type="email" class="form-control rounded-0" id="email">
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <!-- NECKLACES and RINGS-->
-            <section class="container my-lg-5">
-                <div class="row">
-                    <div class="col-12 col-md-7 position-relative p-0 mt-5 mt-lg-0" style="max-height: 90vh;">
-                            <img src="../assets/neckalece-image.jpg" class="mw-100 mh-100 w-100 h-100" style="object-fit: cover;" alt="ring">
-                            <div class="position-absolute pr-4" style="top: 30px;  right: 0;">
-                                    <p class="ralewayFont headingsColor lightBold mb-1 h2">NECKLACES</p>
-                                    <span class="pinkBottBorder">
-                                            <a href="#" class="ralewayFont headingsColor pinkHover  semiBold ">VIEW ALL</a>
-                                    </span>
-                            </div>
-                    </div>
-                    <div class="col-12 col-md-5 mt-5 mt-lg-0 position-relative p-0" style="max-height: 90vh;">
-                        <img src="../assets/ring-image.jpg" class="mw-100 mh-100 w-100 h-100" style="object-fit: cover;" alt="ring">
-                        <div class="position-absolute pr-4" style="bottom: 30px;  right: 0;">
-                                <p class="ralewayFont headingsColor lightBold mb-1 h2">RINGS</p>
-                                <span class="pinkBottBorder">
-                                        <a href="#" class="ralewayFont headingsColor pinkHover  semiBold ">VIEW ALL</a>
-                                </span>
+                        <div class="form-group">
+                            <label for="message">Your Message: *</label>
+                            <textarea class="form-control rounded-0" id="message" placeholder="Write your rmessage here..." rows="3"></textarea>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <!-- EARINGS and BRACELETS-->
-            <section class="container my-lg-5">
-                    <div class="row">
-                        <div class="col-12 col-md-5 mt-5 mt-lg-0 position-relative p-0" style="max-height: 90vh;">
-                                <img src="../assets/earings-image.jpg" class="mw-100 mh-100 w-100 h-100" style="object-fit: cover;" alt="ring">
-                                <div class="position-absolute pr-4" style="bottom: 30px;  right: 0;">
-                                        <p class="ralewayFont headingsColor lightBold mb-1 h2">EARINGS</p>
-                                        <span class="pinkBottBorder">
-                                                <a href="#" class="ralewayFont headingsColor pinkHover  semiBold ">VIEW ALL</a>
-                                        </span>
-                                </div>
-                        </div>
-                        <div class="col-12 col-md-7 mt-5 mt-lg-0 position-relative p-0" style="max-height: 90vh;">
-                            <img src="../assets/bracelet-image.jpg" class="mw-100 mh-100 w-100 h-100" style="object-fit: cover;" alt="ring">
-                            <div class="position-absolute pl-4" style="top: 30px;  left: 0;">
-                                    <p class="ralewayFont headingsColor lightBold mb-1 h2">BRACELETS</p>
-                                    <span class="pinkBottBorder">
-                                            <a href="#" class="ralewayFont headingsColor pinkHover  semiBold ">VIEW ALL</a>
-                                    </span>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-            <!-- jewelry sets -->
-            <section class="container p-0">
-                <!-- Large screen -->
-                    <div class="col-12 d-none d-lg-block position-relative p-0 container" style="height: 50vh;">
-                            <img src="../assets/set-image.jpg" class="mw-100 mh-100 w-100 h-100" style="object-fit: cover;" alt="ring">
-                            <div class="position-absolute pr-4" style="top: 30px;  right: 0;">
-                                    <p class="ralewayFont headingsColor lightBold mb-1 h2">JEWELRY SETS</p>
-                                    <span class="pinkBottBorder">
-                                            <a href="#" class="ralewayFont headingsColor pinkHover  semiBold ">VIEW ALL</a>
-                                    </span>
-                            </div>
-                    </div>
-                <!-- Small Screen -->
-                    <div class="col-12 d-block d-lg-none mt-5  mt-lg-0 position-relative p-0 container" style="height: 50vh;">
-                            <img src="../assets/set-image-xs-s-m.jpg" class="mw-100 mh-100 w-100 h-100" style="object-fit: cover;" alt="ring">
-                            <div class="position-absolute pr-4" style="top: 30px;  right: 0;">
-                                    <p class="ralewayFont headingsColor lightBold mb-1 h2">JEWELRY SETS</p>
-                                    <span class="pinkBottBorder">
-                                            <a href="#" class="ralewayFont headingsColor pinkHover  semiBold ">VIEW ALL</a>
-                                    </span>
-                            </div>
-                    </div>
+                        <button type="submit" class="btn buttonsBg col rounded-0 text-white">SEND MESSAGE</button>
+                </form>
             </section>
         </main>
         <!-- Footer -->
-        <footer class="container p-0 py-4 mt-5" style="border-top: 2px solid grey";>
+        <footer class="container  p-0 py-4 mt-5" style="border-top: 2px solid grey";>
             <div class="row mw-100 m-0">
                 <div class="col-12 col-lg-3 order-2 order-lg-1 p-0 mt-3">
                     <p class="ralewayFont text-center text-lg-left" style="font-size: 14px;">&copy;<span class="buttonsColor" style="font-size: 14px;">MAXE</span> jewelry. All Rights Reserved.</p>
