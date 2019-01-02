@@ -26,6 +26,9 @@
 .ralewayFont {
     font-family: 'Raleway', sans-serif;
 }
+.heavyBold  {
+    font-weight: 800;
+}
 .semiBold {
     font-weight:600;
 }
@@ -40,6 +43,10 @@
     color:  #AA8077;
     text-decoration: none;
 }
+.blackHover:hover {
+    color: black;
+    text-decoration: none;
+}
 .pinkBottBorder {
     border-bottom: 2px solid #AA8077;
 }
@@ -47,12 +54,16 @@
 #mainNav {
     top: 50px;
 }
+.inverse {
+    background: #f3f3f3;
+    border-bottom: 2px solid grey;
+}
 /* Header */
 header {
-    height: 100vh;
+    height: 65vh;
 }
 .site-heading {
-    padding: 200px 0 100px 0;
+    padding: 100px 0 100px 0;
 }
 .site-heading p {
     font-size: 34px; line-height: 50px; letter-spacing: 2px;
@@ -64,6 +75,10 @@ header {
 .nav-tabs .nav-link.active {
     border: 1px solid #AA8077;
     border-radius: 0;
+}
+/* About us */
+.aboutUs,.blog, .contact {
+    min-height: 75vh;
 }
 /* xs */
 @media only screen and (max-width: 480px) {
@@ -90,6 +105,7 @@ header {
         background-repeat: no-repeat;
         background-position: center;
     }
+
 }
 /* md */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -99,12 +115,13 @@ header {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
 }
 /* lg */
 @media only screen and (min-width: 985px) {
     /* header */
     header {
-        height: 90vh;
+        height: 80vh;
     }
     .masthead {
         background: url("../assets/hero-image-xl.jpg");
@@ -116,5 +133,8 @@ header {
     }
     .site-heading p {
         font-size: 52px; line-height: 100px; letter-spacing: 5px;
+    }
+    .aboutUs, .blog, .contact {
+        min-height: 85vh;
     }
 }

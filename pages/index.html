@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="../styles/index.css">
     <title>MAXE jewelry</title>
 </head>
-<body style="height: 100vh;">
+<body>
     <!-- Free shipping -->
         <!-- Large Screen -->
-        <section class="d-none d-lg-flex justify-content-center blackBg align-items-center p-2 fixed-top">
+        <section class="d-none d-lg-flex justify-content-center blackBg align-items-center fixed-top" style="height: 50px;">
             <p class="ralewayFont m-0"><span class="buttonsColor mediumBold">FREE SHIPPING</span> <span class="mainColor mediumBold">ON ALL ORDERS OVER &euro;60</span></p>
         </section>
         <!-- Small screen -->
@@ -39,11 +39,15 @@
                         <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="hamburgerMenu">
-                    <ul class="navbar-nav ml-auto align-items-lg-end">
-                        <li class="nav-item">
-                            <span class="nav-link text-center">
-                                <a href="./products.html" class="ralewayFont headingsColor pinkHover text-uppercase mediumBold">Products</a>
-                            </span>
+                    <ul class="navbar-nav ml-auto align-items-lg-center">
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle ralewayFont headingsColor pinkHover text-uppercase mediumBold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Products
+                                </a>
+                                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </div>
                         </li>
                         <li class="nav-item">
                             <span class="nav-link text-center">
@@ -87,10 +91,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mobileMenu">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <span class="nav-link text-center">
-                                <a href="./products.html" class="ralewayFont headingsColor pinkHover text-uppercase">Products</a>
-                            </span>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle ralewayFont headingsColor pinkHover text-uppercase mediumBold text-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Products
+                                </a>
+                                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item text-center" href="#">Action</a>
+                                    <a class="dropdown-item  text-center" href="#">Another action</a>
+                                </div>
                         </li>
                         <li class="nav-item">
                             <span class="nav-link text-center">
@@ -182,7 +190,7 @@
             <!-- jewelry sets -->
             <section class="container p-0">
                 <!-- Large screen -->
-                    <div class="col-12 d-none d-lg-block position-relative p-0 container" style="height: 50vh;">
+                    <div class="col-12 d-none d-lg-block position-relative p-0 container">
                             <img src="../assets/set-image.jpg" class="mw-100 mh-100 w-100 h-100" style="object-fit: cover;" alt="ring">
                             <div class="position-absolute pr-4" style="top: 30px;  right: 0;">
                                     <p class="ralewayFont headingsColor lightBold mb-1 h2">JEWELRY SETS</p>
@@ -230,7 +238,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Custom Js -->
     <script>
-        
+        var w = window.innerWidth;
+        var mainNav = document.querySelector('#mainNav');
+        var scrollPosY = window.scrollY;
+
+        // Inverse mainNav colors on scroll
+        window.addEventListener('scroll', function() {
+            scrollPosY = window.scrollY;
+            if (w > 990) {
+                if (scrollPosY > 1) { 
+                    mainNav.classList.add('inverse');
+                } else {
+                    mainNav.classList.remove('inverse');
+                }
+            } 
+        });
     </script>
 </body>
 </html>
